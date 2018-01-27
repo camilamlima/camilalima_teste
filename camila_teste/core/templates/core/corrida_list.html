@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %}
+{% block title %}
+Corridas
+{% endblock title %}
+{% block content %}
+    <h1>Corridas</h1>
+
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'core:home_page' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Corridas</li>
+    </ol>
+
+  <!-- Example DataTables Card-->
+  <div class="card mb-3">
+    <div class="card-header" style="text-align: right;">
+      <a class="btn btn-primary" href="{% url "core:corrida_new" %}">Criar Nova</a>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Motorista</th>
+              <th>Passageiro</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Motorista</th>
+              <th>Passageiro</th>
+              <th>Valor</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            {% for corrida in object_list %}
+            <tr>
+                <td>{{ corrida.motorista.name }}</td>
+                <td>{{ corrida.passageiro.name }}</td>
+                <td>R$ {{ corrida.total }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock content %}

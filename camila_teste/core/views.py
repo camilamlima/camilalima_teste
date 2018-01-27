@@ -6,7 +6,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.shortcuts import render
 
-from .models import Motorista, Passageiro
+from .models import Motorista, Passageiro, Corrida
+from .forms import CorridaForm
 
 # Create your views here.
 
@@ -58,3 +59,13 @@ class PassageiroUpdate(LoginRequiredMixin, UpdateView):
 class PassageiroDelete(LoginRequiredMixin, DeleteView):
     model = Passageiro
     success_url = reverse_lazy('core:passageiro_list')
+
+
+class CorridaList(LoginRequiredMixin, ListView):
+    model = Corrida
+
+
+class CorridaCreate(LoginRequiredMixin, CreateView):
+    model = Corrida
+    form_class = CorridaForm
+    success_url = reverse_lazy('core:corrida_list')

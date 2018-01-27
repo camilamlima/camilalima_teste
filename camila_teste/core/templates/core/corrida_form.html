@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load tools %}
+{% block title %}
+    Adicionar corrida
+{% endblock title %}
+{% block content %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'core:home_page' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:corrida_list' %}">Corridas</a>
+        </li>
+        <li class="breadcrumb-item active">
+            Adicionar corrida
+        </li>
+    </ol>
+
+    <form method="post">{% csrf_token %}
+        {% for field in form %}
+          <div class="form-group">
+            {{ field.label_tag }}
+            {{ field|addcss:'form-control' }}
+            {% if field.errors %}
+                <div class="invalid-feedback">
+                   {{ field.errors }}
+                </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+{% endblock content %}
+{% block extrajs %}
+    <script>
+    // $(document).ready(function(){
+    //     $('#id_total').mask("#.##0,00", {reverse: true});
+    // });
+    </script>
+{% endblock extrajs %}

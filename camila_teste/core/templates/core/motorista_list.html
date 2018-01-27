@@ -51,7 +51,13 @@ Motoristas
                 <td>{{ motorista.cpf }}</td>
                 <td>{{ motorista.sexo }}</td>
                 <td>{{ motorista.model_car }}</td>
-                <td>{{ motorista.active }}</td>
+                <td>
+                  {% if motorista.active %}
+                    <i class="fa fa-check text-success" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fa fa-ban text-danger" aria-hidden="true"></i>
+                  {% endif %}
+                </td>
                 <td>
                     <a class="btn btn-danger btn-sm" href="{% url "core:motorista_delete" motorista.id %}">
                         <i class="fa fa-trash" aria-hidden="true"></i></a>
