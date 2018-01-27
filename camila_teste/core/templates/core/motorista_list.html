@@ -49,7 +49,7 @@ Motoristas
                 <td><a href="{% url "core:motorista_edit" motorista.id %}">{{ motorista.name }}</a></td>
                 <td>{{ motorista.birth_date }}</td>
                 <td>{{ motorista.cpf }}</td>
-                <td>{{ motorista.sexo }}</td>
+                <td>{{ motorista.get_sexo_display }}</td>
                 <td>{{ motorista.model_car }}</td>
                 <td>
                   {% if motorista.active %}

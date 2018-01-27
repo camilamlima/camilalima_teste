@@ -45,7 +45,7 @@ Passageiros
                 <td><a href="{% url "core:passageiro_edit" passageiro.id %}">{{ passageiro.name }}</a></td>
                 <td>{{ passageiro.birth_date }}</td>
                 <td>{{ passageiro.cpf }}</td>
-                <td>{{ passageiro.sexo }}</td>
+                <td>{{ passageiro.get_sexo_display }}</td>
                 <td>
                     <a class="btn btn-danger btn-sm" href="{% url "core:passageiro_delete" passageiro.id %}">
                         <i class="fa fa-trash" aria-hidden="true"></i></a>

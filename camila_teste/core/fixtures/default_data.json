@@ -1,0 +1,1124 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "core",
+        "model": "passageiro"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "core",
+        "model": "motorista"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "core",
+        "model": "corrida"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xud60mt21rhwuwnqun3rcmpn36ll5o74",
+    "fields": {
+        "session_data": "NDg1OGE4NDBlYmUyYWI3MzVmOTYxZjk5ZDY3ZDg1Yjg0ZWJmNzFmNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYzZiOTRlZmM2OWRlYTI5NmI4OWFkY2ZjMTAwNDhiYzZjOTFmYzIxMSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2018-02-10T17:01:33.068Z"
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 1,
+    "fields": {
+        "name": "Lorenzo Tom\u00e1s dos Santos",
+        "birth_date": "1996-11-26",
+        "cpf": "886.922.121-05",
+        "sexo": "M",
+        "model_car": "Way 1.8 Total Flex 8V Mec.",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 2,
+    "fields": {
+        "name": "Jo\u00e3o Emanuel Juan Barbosa",
+        "birth_date": "1996-05-06",
+        "cpf": "313.778.043-80",
+        "sexo": "M",
+        "model_car": "Sportage EX 2.0 16V/ 2.0 16V Flex Aut.",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 3,
+    "fields": {
+        "name": "Anthony Julio Souza",
+        "birth_date": "1996-10-26",
+        "cpf": "988.610.817-70",
+        "sexo": "M",
+        "model_car": "Ignis WRS 1.3 16V 82cv 4x4 4p",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 4,
+    "fields": {
+        "name": "Levi Marcelo Gomes",
+        "birth_date": "1996-09-08",
+        "cpf": "339.065.004-03",
+        "sexo": "M",
+        "model_car": "Seville 4.6",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 5,
+    "fields": {
+        "name": "Caio Carlos Eduardo Iago Barros",
+        "birth_date": "1989-11-12",
+        "cpf": "204.537.546-35",
+        "sexo": "M",
+        "model_car": "TOPIC FURGAO L 2.2 8V/ 2.0 16V 4p",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 6,
+    "fields": {
+        "name": "Danilo Elias Fernandes",
+        "birth_date": "1989-02-18",
+        "cpf": "026.653.371-00",
+        "sexo": "M",
+        "model_car": "A4 2.4 30V Mec",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 7,
+    "fields": {
+        "name": "Bruna Valentina Fernandes",
+        "birth_date": "1989-10-15",
+        "cpf": "588.429.487-56",
+        "sexo": "F",
+        "model_car": "COOPER Country. John Works ALL4 1.6 Aut.",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 8,
+    "fields": {
+        "name": "Isadora Eduarda Elisa Lima",
+        "birth_date": "1989-02-13",
+        "cpf": "090.067.415-66",
+        "sexo": "F",
+        "model_car": "Fit EXL 1.5 Flex 16V 5p Mec",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 9,
+    "fields": {
+        "name": "Camila D\u00e9bora Barbosa",
+        "birth_date": "1989-11-16",
+        "cpf": "034.227.356-66",
+        "sexo": "F",
+        "model_car": "F-250 Tropiclassic 3.9 TB Diesel",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 10,
+    "fields": {
+        "name": "La\u00eds Hadassa Lima",
+        "birth_date": "1989-02-05",
+        "cpf": "240.378.079-04",
+        "sexo": "F",
+        "model_car": "EC7 1.8 16V 130cv 4p Mec.",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 11,
+    "fields": {
+        "name": "Heloisa Gabrielly Let\u00edcia Oliveira",
+        "birth_date": "1992-06-13",
+        "cpf": "838.528.959-36",
+        "sexo": "F",
+        "model_car": "Grand Vitara 2.0 16V Ed. Special 5p Aut.",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 12,
+    "fields": {
+        "name": "Amanda Raquel da Silva",
+        "birth_date": "1992-04-23",
+        "cpf": "360.940.619-42",
+        "sexo": "F",
+        "model_car": "Jimny 4WORK OFF ROAD 1.3 16V",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 13,
+    "fields": {
+        "name": "Beatriz Luna Pereira",
+        "birth_date": "1992-04-07",
+        "cpf": "745.118.431-55",
+        "sexo": "F",
+        "model_car": "Jipe Montez Std 4x4 Teto R",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 14,
+    "fields": {
+        "name": "Isabelle Evelyn Sabrina Castro",
+        "birth_date": "1992-10-15",
+        "cpf": "980.148.098-07",
+        "sexo": "F",
+        "model_car": "V21 Pick-up CS 1.3 16V 2p",
+        "active": true
+    }
+},
+{
+    "model": "core.motorista",
+    "pk": 15,
+    "fields": {
+        "name": "Bianca Hadassa Elisa Rodrigues",
+        "birth_date": "1992-04-02",
+        "cpf": "331.858.859-88",
+        "sexo": "F",
+        "model_car": "Jipe Montez Std 4x4 Teto R",
+        "active": true
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 1,
+    "fields": {
+        "name": "Mariana Ester Marina Mendes",
+        "birth_date": "1992-07-13",
+        "cpf": "247.813.903-07",
+        "sexo": "F"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 2,
+    "fields": {
+        "name": "Fernanda L\u00edvia Luiza Barros",
+        "birth_date": "1992-07-08",
+        "cpf": "213.390.065-96",
+        "sexo": "F"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 3,
+    "fields": {
+        "name": "Sophia Fl\u00e1via Carvalho",
+        "birth_date": "1992-01-08",
+        "cpf": "951.649.557-50",
+        "sexo": "F"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 4,
+    "fields": {
+        "name": "Elisa Maria Oliveira",
+        "birth_date": "1992-09-03",
+        "cpf": "176.466.297-07",
+        "sexo": "F"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 5,
+    "fields": {
+        "name": "Breno Raul Pereira",
+        "birth_date": "1986-06-04",
+        "cpf": "127.134.664-82",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 6,
+    "fields": {
+        "name": "Enzo Daniel Lorenzo Moura",
+        "birth_date": "1986-11-10",
+        "cpf": "746.842.220-63",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 7,
+    "fields": {
+        "name": "Joaquim Jo\u00e3o Mendes",
+        "birth_date": "1986-12-14",
+        "cpf": "042.345.648-26",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 8,
+    "fields": {
+        "name": "Hugo Vinicius Mendes",
+        "birth_date": "1986-04-17",
+        "cpf": "461.760.643-25",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 9,
+    "fields": {
+        "name": "Anthony Antonio Martins",
+        "birth_date": "1986-01-11",
+        "cpf": "211.410.586-50",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.passageiro",
+    "pk": 10,
+    "fields": {
+        "name": "Lorenzo Kaique Yuri Pinto",
+        "birth_date": "1986-01-03",
+        "cpf": "266.380.214-00",
+        "sexo": "M"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 1,
+    "fields": {
+        "motorista": 1,
+        "passageiro": 1,
+        "total": "10.00"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 2,
+    "fields": {
+        "motorista": 2,
+        "passageiro": 1,
+        "total": "5.00"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 3,
+    "fields": {
+        "motorista": 1,
+        "passageiro": 2,
+        "total": "20.00"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 4,
+    "fields": {
+        "motorista": 9,
+        "passageiro": 7,
+        "total": "30.00"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 5,
+    "fields": {
+        "motorista": 10,
+        "passageiro": 7,
+        "total": "45.00"
+    }
+},
+{
+    "model": "core.corrida",
+    "pk": 6,
+    "fields": {
+        "motorista": 15,
+        "passageiro": 10,
+        "total": "34.00"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 3,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 3,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 3,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 4,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 4,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 4,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add passageiro",
+        "content_type": 7,
+        "codename": "add_passageiro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change passageiro",
+        "content_type": 7,
+        "codename": "change_passageiro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete passageiro",
+        "content_type": 7,
+        "codename": "delete_passageiro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can add motorista",
+        "content_type": 8,
+        "codename": "add_motorista"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can change motorista",
+        "content_type": 8,
+        "codename": "change_motorista"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can delete motorista",
+        "content_type": 8,
+        "codename": "delete_motorista"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add corrida",
+        "content_type": 9,
+        "codename": "add_corrida"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change corrida",
+        "content_type": 9,
+        "codename": "change_corrida"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete corrida",
+        "content_type": 9,
+        "codename": "delete_corrida"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$nUqne4fqXXM3$P5JpX1yZ/IAGaYh4g1bienzKcdj+de8vH0Azmkja/ck=",
+        "last_login": "2018-01-27T21:25:42Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Admin",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-01-26T23:29:12Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$BhFsHS2g9Trc$PMU5o4Wk4iUsEh3yZ2308odnH71tbQzY2Zf98h5O8O4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "guest",
+        "first_name": "Convidado",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-01-27T21:34:16Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-01-26T23:30:31.323Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Motorista object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-01-27T17:54:01.654Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "sqqqw - 111.111.111-11 ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-01-27T21:33:39.805Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-01-27T21:34:16.699Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "guest",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2018-01-27T21:34:31.058Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "guest",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2018-01-27T21:35:53.830Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Anthony Julio Souza - 988.610.817-70 ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"birth_date\", \"cpf\", \"model_car\", \"active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2018-01-27T21:36:23.920Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Jo\u00e3o Emanuel Juan Barbosa - 313.778.043-80 ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"birth_date\", \"cpf\", \"model_car\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2018-01-27T21:36:49.638Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Lorenzo Tom\u00e1s dos Santos - 886.922.121-05 ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"birth_date\", \"cpf\", \"model_car\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2018-01-27T21:37:20.132Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Levi Marcelo Gomes - 339.065.004-03 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2018-01-27T21:37:44.605Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Caio Carlos Eduardo Iago Barros - 204.537.546-35 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2018-01-27T21:38:04.583Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Danilo Elias Fernandes - 026.653.371-00 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2018-01-27T21:38:36.037Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Bruna Valentina Fernandes - 588.429.487-56 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2018-01-27T21:39:03.047Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Isadora Eduarda Elisa Lima - 090.067.415-66 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2018-01-27T21:39:25.954Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Camila D\u00e9bora Barbosa - 034.227.356-66 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2018-01-27T21:39:50.594Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "La\u00eds Hadassa Lima - 240.378.079-04 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2018-01-27T21:40:16.084Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "Heloisa Gabrielly Let\u00edcia Oliveira - 838.528.959-36 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2018-01-27T21:40:39.238Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Amanda Raquel da Silva - 360.940.619-42 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2018-01-27T21:41:08.227Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Beatriz Luna Pereira - 745.118.431-55 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2018-01-27T21:41:31.166Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "Isabelle Evelyn Sabrina Castro - 980.148.098-07 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2018-01-27T21:41:48.522Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Bianca Hadassa Elisa Rodrigues - 331.858.859-88 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2018-01-27T21:42:12.508Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Mariana Ester Marina Mendes - 247.813.903-07 ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"birth_date\", \"cpf\", \"sexo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2018-01-27T21:42:29.695Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Fernanda L\u00edvia Luiza Barros - 213.390.065-96 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2018-01-27T21:42:43.943Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Sophia Fl\u00e1via Carvalho - 951.649.557-50 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2018-01-27T21:42:56.198Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Elisa Maria Oliveira - 176.466.297-07 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2018-01-27T21:43:13.811Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Breno Raul Pereira - 127.134.664-82 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2018-01-27T21:43:22.768Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Enzo Daniel Lorenzo Moura - 746.842.220-63 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2018-01-27T21:43:33.494Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Joaquim Jo\u00e3o Mendes - 042.345.648-26 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2018-01-27T21:43:43.914Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Hugo Vinicius Mendes - 461.760.643-25 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2018-01-27T21:43:55.821Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "Anthony Antonio Martins - 211.410.586-50 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2018-01-27T21:44:06.774Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "Lorenzo Kaique Yuri Pinto - 266.380.214-00 ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2018-01-27T21:44:50.582Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Lorenzo Tom\u00e1s dos Santos - 886.922.121-05  - Mariana Ester Marina Mendes - 247.813.903-07  - 10.00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"total\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2018-01-27T21:45:02.565Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Jo\u00e3o Emanuel Juan Barbosa - 313.778.043-80  - Mariana Ester Marina Mendes - 247.813.903-07  - 5.00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2018-01-27T21:45:10.510Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Lorenzo Tom\u00e1s dos Santos - 886.922.121-05  - Fernanda L\u00edvia Luiza Barros - 213.390.065-96  - 20.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

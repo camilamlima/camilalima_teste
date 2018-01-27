@@ -14,7 +14,12 @@ from .forms import CorridaForm
 
 @login_required
 def home(request):
-    context = {}
+
+    context = {
+        "count_motoristas": Motorista.objects.count(),
+        "count_passageiros": Passageiro.objects.count(),
+        "count_corridas": Corrida.objects.count(),
+    }
 
     return render(request, 'core/home.html', context)
 

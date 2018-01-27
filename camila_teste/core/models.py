@@ -55,5 +55,5 @@ class Corrida(models.Model):
     total = models.DecimalField(_('Valor corrida'), default=0.0,
                                 max_digits=10, decimal_places=2)
 
-    def __unicode__(self):
+    def __str__(self):
         return "%s - %s - %s" % (self.motorista, self.passageiro, self.total)
