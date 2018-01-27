@@ -171,7 +171,7 @@ LOGIN_URL = '/login'
 # Caminho para a tela de logout padr�o
 LOGOUT_URL = '/logout'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'core:home_page'
 
 
 try:
