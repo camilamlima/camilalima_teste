@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load tools %}
+{% block title %}
+    {% if object %}Editar passageiro: {{ object.name }}{% else%}Adicionar passageiro{% endif %}
+{% endblock title %}
+{% block content %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'core:home_page' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:passageiro_list' %}">Passageiros</a>
+        </li>
+        <li class="breadcrumb-item active">
+            {% if object %}Editar passageiro: {{ object.name }}{% else%}Adicionar passageiro{% endif %}
+        </li>
+    </ol>
+
+    <form method="post">{% csrf_token %}
+        {% for field in form %}
+          <div class="form-group">
+            {{ field.label_tag }}
+            {{ field|addcss:'form-control' }}
+            {% if field.errors %}
+                <div class="invalid-feedback">
+                   {{ field.errors }}
+                </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+{% endblock content %}
+{% block extrajs %}
+    <script>
+      $(document).ready(function(){
+        $('#id_birth_date').mask('00/00/0000');
+        $('#id_cpf').mask('000.000.000-00', {reverse: true});
+      });
+    </script>
+{% endblock extrajs %}

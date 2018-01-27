@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '192.168.56.102'
+    '192.168.56.103'
 ]
 
 
@@ -160,10 +160,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    # os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Caminho para a tela de login padr�o
+LOGIN_URL = '/login'
+
+# Caminho para a tela de logout padr�o
+LOGOUT_URL = '/logout'
+
+LOGIN_REDIRECT_URL = 'home'
+
 
 try:
     from .custom_settings import *

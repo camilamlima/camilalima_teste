@@ -14,16 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from camila_teste.core.views import home
-
 urlpatterns = [
-    path('', home, name='home_page'),
+
+    path('login/', auth_views.login, {'template_name': 'core/login.html'}, name='login'),
+    path('logout/', auth_views.logout, {'next_page': '/login'}, name='logout'),
     path('admin/', admin.site.urls),
-    path('core/', include("camila_teste.core.urls")),
+    path('core/', include("camila_teste.core.urls", namespace='core')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,59 @@
+{% extends 'core/base.html' %}
+{% block title %}
+Passageiros
+{% endblock title %}
+{% block content %}
+    <h1>Passageiros</h1>
+
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'core:home_page' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Passageiros</li>
+    </ol>
+
+  <!-- Example DataTables Card-->
+  <div class="card mb-3">
+    <div class="card-header" style="text-align: right;">
+      <a class="btn btn-primary" href="{% url "core:passageiro_new" %}">Criar Novo</a>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Data de Nacimento</th>
+              <th>CPF</th>
+              <th>Sexo</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Nome</th>
+              <th>Data de Nacimento</th>
+              <th>CPF</th>
+              <th>Sexo</th>
+              <th>Ação</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            {% for passageiro in object_list %}
+            <tr>
+                <td><a href="{% url "core:passageiro_edit" passageiro.id %}">{{ passageiro.name }}</a></td>
+                <td>{{ passageiro.birth_date }}</td>
+                <td>{{ passageiro.cpf }}</td>
+                <td>{{ passageiro.sexo }}</td>
+                <td>
+                    <a class="btn btn-danger btn-sm" href="{% url "core:passageiro_delete" passageiro.id %}">
+                        <i class="fa fa-trash" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock content %}
